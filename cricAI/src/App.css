@@ -185,7 +185,7 @@ aspect-ratio: 1;
   width: 20px;                /* scale icon inside circle */
   height: 20px;
   object-fit:cover;   
-      /* for <img> */
+      /* for <nimg> */
 }
 /* .phone-section {
   padding: 12px 97px;
