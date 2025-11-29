@@ -1,0 +1,189 @@
+.section5-container {
+    padding: 80px 100px 40px 100px;
+}
+.footer-titles {
+    display: flex;
+align-items: center;
+gap: 368px;
+align-self: stretch;
+}
+.column1 {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    /* width: 366px; */
+    
+}
+.column-next {
+    display: flex;
+    flex-direction: row;
+    gap:200px;
+}
+.footer-span {
+    margin-top: 24px;
+    align-self: stretch;
+    color: rgba(0, 0, 0, 0.60);
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align: center;
+}
+.footer-logo {
+    display: flex;
+    flex-direction: row;
+
+
+}
+.crik-logo {
+     height:45px;
+}
+.logo-criktext {
+     font-size: 32px;
+    font-weight: 600;
+    font-family: "Roboto Condensed", sans-serif;
+
+
+    color: #022775;
+}
+.footer-items {
+    display: flex;
+    flex-direction: column;
+    gap:18px;
+
+}
+.footer-last-text {
+    color: rgba(85, 85, 85, 0.80);
+font-family: "Roboto Condensed";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.footer-last-texts {
+    color: #000;
+font-family: "Roboto Condensed";
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 72px;
+}
+.copyright-text {
+    color: #777;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.terms-cond {
+ display: flex;
+ flex-direction: row;
+ gap:50px;
+}
+
+@media (max-width: 768) {
+.section5-container {
+    padding: 48px 24px 80px 24px;
+}
+.footer-titles {
+    display: flex;
+    flex-direction: column;
+align-items: center;
+gap: 40px;
+align-self: stretch;
+}
+.column1 {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    /* width: 366px; */
+    
+}
+.column-next {
+    display: flex;
+    flex-direction: row;
+    /* gap:200px; */
+}
+.footer-span {
+    margin-top: 24px;
+    align-self: stretch;
+    color: rgba(0, 0, 0, 0.60);
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align: center;
+}
+.footer-logo {
+    display: flex;
+    flex-direction: row;
+
+
+}
+.crik-logo {
+     height:45px;
+}
+.logo-criktext {
+     font-size: 32px;
+    font-weight: 600;
+    font-family: "Roboto Condensed", sans-serif;
+
+
+    color: #022775;
+}
+.footer-items {
+    display: flex;
+    flex-direction: column;
+    gap:18px;
+
+}
+.footer-last-text {
+    color: rgba(85, 85, 85, 0.80);
+font-family: "Roboto Condensed";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.footer-last-texts {
+    color: #000;
+font-family: "Roboto Condensed";
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 72px;
+}
+.copyright-text {
+    color: #777;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.terms-cond {
+ display: flex;
+ flex-direction: row;
+ gap:50px;
+}
+}
+
+
+
+
+

@@ -1,0 +1,28 @@
+/* FULLSCREEN HERO AREA */
+.stretch-container {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* IMAGE THAT STARTS BOTH WIDE + TALL (ZOOMED) */
+.stretch-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  position: sticky;
+  top: 0;
+
+  transform-origin: top;  /* important: shrink downward */
+  transform: scale(1.8);  /* start enlarged */
+  will-change: transform;
+}
+
+/* PAGE CONTENT */
+.page-content {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}

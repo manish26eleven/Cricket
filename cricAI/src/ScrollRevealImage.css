@@ -1,0 +1,19 @@
+.hero-container {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;         /* hides bottom of image */
+  position: relative;
+}
+
+/* image looks fixed in place */
+.hero-image {
+  width: 100%;
+  height: auto;
+  position: sticky;
+  top: 0;
+
+  transform-origin: top;   /* important */
+  transform: scale(1.8) translateY(0%); /* default zoomed view */
+  transition: transform 0.2s linear;
+  will-change: transform;
+}

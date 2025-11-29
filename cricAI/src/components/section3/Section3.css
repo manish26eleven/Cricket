@@ -1,0 +1,196 @@
+
+.section-container {
+    padding: 40px 100px;
+}
+.section-containers {
+  padding: 0 100px;
+}
+
+.cards-layout {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  align-items: stretch; /* makes big card match the column height */
+  
+}
+
+/* Left column with two cards stacked */
+.left-column {
+  
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  /* flex-basis: 75%; */
+}
+
+
+/* Small cards */
+.small-card {
+  /* height: 400px;
+  align-self: stretch;
+  
+  border-radius: 24px;
+border: 1px solid #DCE6FF;
+background: #F8FAFF;
+display: flex;
+flex-direction: row; */
+
+  /* width: 100%; */
+   display: flex;
+  flex-direction: row;
+  height: 400px;
+  width: 800px;
+  /* gap: 40px; */
+  border-radius: 24px;
+  border: 1px solid #DCE6FF;
+  background: #F8FAFF;
+  /* padding: 24px; */
+}
+
+/* Big card takes full height of left column */
+.big-card {
+  /* flex: 1; */
+  
+  /* padding: 20px; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* flex-basis: 25%; */
+  height: 840px;
+  width: 400px;
+  
+  border-radius: 24px;
+border: 1px solid #DCE6FF;
+background: #F8FAFF;
+  /* padding: 20px; */
+  /* height: auto; */
+}
+
+.card-context {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 117px 50px 86px 50px;
+}
+.card-context-right {
+  padding-top: 122px;
+  padding-bottom: 122px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 117px 50px 86px 50px; */
+}
+
+
+.text-card {
+    align-self: stretch;
+    color: #000;
+font-family: "Roboto Condensed", sans-serif;
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: 40px; 
+ text-align: center;
+}
+.text-card-right{
+    align-self: stretch;
+    color: #000;
+font-family: "Roboto Condensed", sans-serif;
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: 40px; 
+padding-left: 40px;
+padding-right: 40px;
+justify-content: center;
+align-items: center;
+ text-align: center;
+}
+.desc-card {
+    margin-top: 32px;
+    color: #555;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.desc-card-right {
+    margin-top: 32px;
+    color: #555;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-left: 20px;
+padding-right: 16px;
+justify-content: center;
+align-items: center;
+}
+
+.video-container {
+  width: 262px;        /* same as video width — prevents horizontal cut */
+  height: 360px;       /* smaller height → only vertical crop */
+  overflow: hidden;    /* hides extra video */
+  position: relative;
+  border-radius: 16px 16px 0 0 ;
+  margin-right: 50px;
+  margin-top: 40px;
+  flex-shrink: 0;
+}
+
+.videoes {
+  
+  
+  width: 262px;
+  height: 540px;
+  
+  
+
+  object-fit: cover;  /* keeps aspect ratio, no stretch */
+  
+}
+.videoes-right {
+  
+  
+  width: 262px;
+  height: 540px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+  object-fit: cover;  /* keeps aspect ratio, no stretch */
+  
+}
+.video-containers {
+   width: 262px;        /* same as video width — prevents horizontal cut */
+  height: 360px;       /* smaller height → only vertical crop */
+  overflow: hidden;    /* hides extra video */
+  position: relative;
+  border-radius: 16px 16px 0 0 ;
+  /* margin-right: 76px; */
+  margin-left: 50px;
+  margin-top: 40px;
+  flex-shrink: 0;
+}
+.video-container-right {
+  width: 262px;        /* same as video width — prevents horizontal cut */
+  height: 400px;       /* smaller height → only vertical crop */
+  overflow: hidden;    /* hides extra video */
+  position: relative;
+  border-radius: 16px 16px 0 0 ;
+  margin-right: 69px;
+  margin-left: 69px;
+  /* margin-top: 20px; */
+
+  /* flex-shrink: 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+

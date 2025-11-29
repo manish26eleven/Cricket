@@ -1,0 +1,217 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+
+  padding-left: 100px;
+  padding-right: 130px;
+ 
+}
+
+/* LEFT SIDE */
+.left-content {
+  display: flex;
+  padding: 32px 96px 32px 32px;
+  flex-direction: column;
+  /* justify-content: center; */
+  
+  align-items: flex-start;
+  gap: 42px;
+  flex: 1;
+  min-width: 280px;
+}
+.card-button {
+ 
+  width: 169px;
+height: 54px;
+border-radius: 999px;
+border: 0.8px solid #E5EBF1;
+background: #F7F8FA;
+display: flex;
+ align-items: center; 
+flex-direction: row;
+ padding-left: 12px;  /* important */
+  padding-right: 6px;
+  margin-top: 42px;
+}
+.button-text {
+  flex: 1;
+  color: #000;
+ font-family: "Roboto Condensed", sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+white-space: nowrap; 
+line-height: 24px; /* 150% */
+letter-spacing: -0.32px;
+}
+
+/* TITLE */
+.title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #000;
+  line-height: normal;
+}
+.arrow-div {
+  display: flex;
+width: 42px;
+/* margin-left: auto; */
+margin-left: 10px;
+height: 42px;
+   
+/* padding: 8px 8px 8px 8px; */
+justify-content: center;
+align-items: center;
+ border-radius: 50%; 
+/* border-radius: 912.13px; */
+border: 0.6px solid #FFF;
+background: #FFF;
+box-shadow: 1px 1px 6px 0 rgba(220, 227, 231, 0.50) inset;
+}
+.description {
+  color: #000;
+ font-family: "Roboto", sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 24px;
+}
+.card-text {
+  color: #000;
+ font-family: "Roboto", sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.tick-div {
+  display: flex;
+width: 23.633px;
+height: 23.633px;
+padding: 3.938px 3.938px 3.939px 3.939px;
+justify-content: center;
+align-items: center;
+aspect-ratio: 23.63/23.63;
+border-radius: 737.782px;
+background: radial-gradient(45.07% 52.4% at 50% 24.1%, rgba(255, 255, 255, 0.28) 0%, rgba(142, 118, 230, 0.00) 100%), #3C5DC3;
+box-shadow: 0 -0.985px 7.878px 0 rgba(255, 255, 255, 0.34) inset;
+
+}
+.list {
+  display: flex;
+align-items: center;
+gap: 11.816px;
+align-self: stretch;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.item-list {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 15.7px;
+margin-top: 24px;
+}
+
+/* RIGHT SIDE */
+.right-content {
+  width: 416px;
+  height: 526px;
+  padding-left: 100px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  flex:1;
+  /* background: #000; */
+  /* box-shadow: 0px 8px 22px rgba(0, 0, 0, 0.15); */
+  transition: transform 0.25s ease;
+}
+
+/* on hover card lift */
+.right-content:hover {
+  transform: translateY(-4px);
+}
+
+/* VIDEO */
+.video {
+  width: 100%;
+  max-width: 416px;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  /* filter: brightness(0.7); */
+  transition: filter 0.3s ease;
+}
+
+/* Brighten video on hover */
+.right-content:hover .video {
+  filter: brightness(1);
+}
+.floating-card {
+  position: absolute;
+
+  top: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+background: #3CB5D5;
+  
+  width: 203px;
+height: 207px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+/* align-items: center; */
+  /* padding: 16px 20px; */
+  /* background: #fff; */
+  /* border-radius: 16px; */
+  /* box-shadow: 0 6px 18px rgba(0,0,0,0.15); */
+
+  z-index: 10;            /* ensures it's above the video */
+}
+.card-texts{
+    color:  #FFF;
+font-family: "Paytone One";
+font-size: 51px;
+font-style: normal;
+font-weight: 400;
+margin-left: 22px;
+line-height: 45px; /* 88.889% */
+/* padding: '5px 32px 8px 4px'; */
+}
+.card-desc {
+  color: var(--3, #FFF);
+font-family: Inter;
+margin-top: 25px;
+margin-left: 22px;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 25.535px; /* 141.86% */
+}
+
+/* RESPONSIVE FIXES */
+@media (max-width: 900px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .right-content {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/4; /* keeps proportion */
+  }
+}
