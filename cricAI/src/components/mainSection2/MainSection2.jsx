@@ -17,7 +17,7 @@ const MainSection2 = () => {
                            playsInline
                            preload="auto"
                              />
-                              <div className="floating-cards">
+                              <div className="floating-card">
     <span className='card-texts'>27%</span>
     <span className='card-desc'>Productivity increase on <br /> average</span>
   </div>
@@ -56,7 +56,8 @@ const MainSection2 = () => {
               <span className='button-text'>DRS for Ground</span>
               <div className='arrow-div'>
              <img
-             src={arrow}/>
+             src={arrow}
+             className='arrow-section1'/>
               </div>
           
               </button>

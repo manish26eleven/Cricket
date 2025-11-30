@@ -88,3 +88,78 @@ letter-spacing: -0.035px;
     margin-top: 64px;
     flex-direction: row;
 }
+@media (max-width : 768px) {
+    .test-container {
+    margin: 16px 24px 16px 24px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    gap: 16px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.test-card {
+    border-radius: 15px;
+border: 1px solid #DCE3E7;
+width: 286px;
+height: 262px;
+padding: 24px;
+display: flex;
+flex-direction: column;
+ flex-shrink: 0;   /* IMPORTANT: prevents squishing */
+    /* height: auto;     */
+
+}
+.card-row {
+    gap:15px;
+}
+.test-card-image {
+    width:56px;
+    height: 56px;
+    border-radius: 56px;
+}
+.user-name {
+   
+
+
+
+color: #060B13;
+
+font-size: 16.5px;
+
+
+line-height: 21.074px; /* 127.273% */
+letter-spacing: -0.041px;
+}
+.user-title {
+   
+
+
+
+
+
+
+color: #414E5E;
+
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 16.558px; /* 137.5% */
+letter-spacing: -0.03px;
+}
+.test-review {
+  margin-top: 15px;
+
+
+color: #555;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 150% */
+}
+.test-starts {
+    margin-top: 24px;
+}
+
+}

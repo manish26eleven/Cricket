@@ -126,23 +126,30 @@ className="hero-img-phone"/> </>:
    <span className="section-text">
     Chosen by cricket authorities who value precision, fairness, and innovation.
    </span>
-   <>
+   
     <div className="logos">
     <img
-    src={logo}/>
+    src={logo}
+    className="logo-image"/>
      <img
-    src={logo}/>
+    src={logo}
+    className="logo-image"/>
      <img
-    src={logo}/>
+    src={logo}
+    className="logo-image"/>
      <img
-    src={logo}/>
+    src={logo}
+    className="logo-image"/>
+     <img
+    src={logo}
+    className="logo-image"/>
     
      
     </div>
-    </>
+    
 
 </div>
-<div style={{marginTop:'80px'}}>
+<div style={{marginTop:isMobile ? '23px' : '80px'}}>
 <Section1
 
 image= {section1video}
@@ -181,7 +188,7 @@ What Players and Umpires Say About Crik.ai </span>
 
 </div>
 <Testinomial/>
-   <div className="foot-image">
+   {/* <div className="foot-image">
   <div className="footer-content">
     <span className="footer-title">
       “Give Every Ground the Power of Professional DRS.”
@@ -191,7 +198,7 @@ What Players and Umpires Say About Crik.ai </span>
     </span>
     <img src={playstore} className="playstore-image"/>
   </div>
-  </div>
+  </div> */}
   <Section5/>
 
       </div>

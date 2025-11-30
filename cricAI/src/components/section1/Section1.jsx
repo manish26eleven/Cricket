@@ -41,7 +41,7 @@ const  Section1 = ({image}) => {
     <span className='button-text'>DRS for Ground</span>
     <div className='arrow-div'>
    <img
-   src={arrow}/>
+   src={arrow} className='arrow-section1'/>
     </div>
 
     </button>

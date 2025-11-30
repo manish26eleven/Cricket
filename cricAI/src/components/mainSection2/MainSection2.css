@@ -120,3 +120,108 @@ font-weight: 400;
 line-height: normal;
 margin-top: 24px;
 }
+@media (max-width: 768px) {
+  .main-container {
+   
+
+
+flex-direction: column;
+gap: 24px;
+padding: 24px 24px 0px 24px;
+ 
+  /* background: #F8FAFF; */
+
+}
+
+.card-texts{
+   
+
+
+ 
+
+
+font-size: 28px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+line-height: 13.239px; 
+
+color: #FFF;
+font-family: Roboto;
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: 23.537px; /* 84.06% *//* 110.329% */
+}
+.card-desc {
+  
+margin-top: 15px;
+margin-left: 22px;
+ /* 141.86% */
+color: #FFF;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 13.239px; /* 110.329% */
+
+}
+.left-contents {
+    width: auto;
+  height: auto;
+  padding: 0px;
+   padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 20px;
+  
+  /* background: #000; */
+  flex-shrink: 0;
+  /* box-shadow: 0px 8px 22px rgba(0, 0, 0, 0.15); */
+  transition: transform 0.25s ease;
+}
+.videos {
+  width: 87vw;
+  height: 452px;
+  border-radius: 10px;
+  
+  /* filter: brightness(0.7); */
+  
+}
+.right-contents {
+
+  gap: 0px;
+  
+  
+  padding: 0px 28px 0px 28px;
+}
+.title {
+    
+    color: #060B13;
+    align-self: stretch;
+font-family: "Roboto Condensed" serif;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+  .description {
+  
+ 
+
+
+
+
+margin-top: 16px;
+
+
+color: #060B13;
+font-family: Roboto;
+font-size: 12px;
+
+
+
+}
+
+
+
+}

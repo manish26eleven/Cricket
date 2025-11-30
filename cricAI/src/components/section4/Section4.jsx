@@ -2,7 +2,9 @@ import './Section4.css';
 import Vector from '../../assets/Vector.svg';
 import arrow from '../../assets/arrow.svg';
 import cardContainer from '../../assets/cardContainer.png';
+import mobileContainer from '../../assets/mobile/mobileContainer.png';
 const Section4 = () => {
+  const isMobile = window.innerWidth < 768 ? true : false;
     return(
         <>
         <div className='section4-container'>
@@ -13,7 +15,7 @@ const Section4 = () => {
 
   <div className="card">
     <span className='cards-texts'>How it works</span>
-    <span className='cards-desc'>When an umpire initiates a review, our system instantly captures and analyzes the match clip using advanced computer vision.Within seconds, the analyzed video appears on the umpire’s screen — enabling faster, fairer, and smarter decisions.</span>
+    <span className='cards-desc'>When an umpire initiates a review, our system instantly captures and analyzes the match clip using advanced computer vision.<br/> Within seconds, the analyzed video appears on the umpire’s screen — enabling faster, fairer, and smarter decisions.</span>
   <button className='cards-button'>
 
     <span>Book Demo</span>
@@ -25,7 +27,7 @@ const Section4 = () => {
   </button>
   </div>
     <div className="big-image">
-    <img src={cardContainer}alt="image"/>
+    <img src={isMobile ? mobileContainer : cardContainer}alt="image"/>
   </div>
   
   <div className="card">

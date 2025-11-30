@@ -91,7 +91,7 @@ line-height: normal;
 
 @media (max-width: 768) {
 .section5-container {
-    padding: 48px 24px 80px 24px;
+    padding: 32px 24px 40px 24px;
 }
 .footer-titles {
     display: flex;
@@ -181,6 +181,8 @@ line-height: normal;
  flex-direction: row;
  gap:50px;
 }
+
+
 }
 
 
