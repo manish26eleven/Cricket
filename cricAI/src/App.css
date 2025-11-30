@@ -195,7 +195,14 @@ aspect-ratio: 1;
 } */
 
 .hero-img {
-    width:100vw;
+    /* width:100vw; */
+    /* height: auto; */
+    /* margin-top: 5px; */
+    margin-left: 120px;
+    
+}
+.hero-img-phone {
+    width:100vw; 
     height: auto;
     margin-top: 5px;
     /* margin-left: 120px; */

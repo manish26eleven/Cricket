@@ -49,9 +49,10 @@ const App = () => {
          
 </div>
 <>
-{isMobile ? <img
+{isMobile ? 
+<><img
 src={phoneImage}
-className="hero-img"/> : 
+className="hero-img-phone"/> </>: 
 <div className="phone-section">
     <div className="phone-section1">
       <div className="left-card1">
@@ -141,16 +142,16 @@ className="hero-img"/> :
     </>
 
 </div>
-{/* <div style={{marginTop:'80px'}}>
+<div style={{marginTop:'80px'}}>
 <Section1
 
 image= {section1video}
 />
-</div> */}
+</div>
 {/* <Section2/> */}
-{/* <MainSection2/> */}
-{/* <Section1 image={sectionvideo3}/> */}
-{/* <div className="section">
+<MainSection2/>
+<Section1 image={sectionvideo3}/>
+<div className="section">
    <span className="section-title">
     Features
    </span>
@@ -158,9 +159,9 @@ image= {section1video}
 Features that Makes Cricket  faster, fairer, and smarter.   </span>
    
 
-</div> */}
-{/* <Section3/> */}
-      {/* <div className="section">
+</div>
+<Section3/>
+      <div className="section">
    <span className="section-title">
      How Crik.ai Works
    </span>
@@ -168,9 +169,9 @@ Features that Makes Cricket  faster, fairer, and smarter.   </span>
 Crik.ai makes every decision faster, fairer, and smarter.   </span>
    
 
-</div> */}
-{/* <Section4/> */}
- {/* <div className="section back-color">
+</div>
+<Section4/>
+ <div className="section back-color">
    <span className="section-title">
     Testimonials
    </span>
@@ -178,9 +179,9 @@ Crik.ai makes every decision faster, fairer, and smarter.   </span>
 What Players and Umpires Say About Crik.ai </span>
    
 
-</div> */}
-{/* <Testinomial/> */}
-   {/* <div className="foot-image">
+</div>
+<Testinomial/>
+   <div className="foot-image">
   <div className="footer-content">
     <span className="footer-title">
       “Give Every Ground the Power of Professional DRS.”
@@ -190,8 +191,8 @@ What Players and Umpires Say About Crik.ai </span>
     </span>
     <img src={playstore} className="playstore-image"/>
   </div>
-  </div> */}
-  {/* <Section5/> */}
+  </div>
+  <Section5/>
 
       </div>
          
