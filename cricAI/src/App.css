@@ -465,7 +465,7 @@ height: 642px;
   width: 1280px;
   height: 642px;
 
-  background-image: url('./assets/Footer.png');
+  background-image: url('../../assets/Footer.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
