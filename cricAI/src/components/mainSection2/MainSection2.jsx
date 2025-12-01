@@ -53,7 +53,7 @@ const MainSection2 = () => {
           
               </div>
               <button className='card-button'>
-              <span className='button-text'>DRS for Ground</span>
+              <span className='button-text'>Get DRS for Match</span>
               <div className='arrow-div'>
              <img
              src={arrow}
