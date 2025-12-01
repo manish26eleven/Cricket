@@ -28,12 +28,11 @@ font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-text-align: center;
+/* text-align: center; */
 }
 .footer-logo {
     display: flex;
     flex-direction: row;
-
 
 }
 .crik-logo {
@@ -89,14 +88,14 @@ line-height: normal;
  gap:50px;
 }
 
-@media (max-width: 768) {
+@media (max-width: 768px) {
 .section5-container {
     padding: 32px 24px 40px 24px;
 }
 .footer-titles {
     display: flex;
     flex-direction: column;
-align-items: center;
+align-items: normal;
 gap: 40px;
 align-self: stretch;
 }
@@ -107,38 +106,44 @@ align-self: stretch;
     /* width: 366px; */
     
 }
+.crik-logo {
+    width: 35.874px;
+height: 42px;
+}
+
 .column-next {
     display: flex;
     flex-direction: row;
+   padding-left: 0px;
+    gap:64px;
     /* gap:200px; */
 }
 .footer-span {
-    margin-top: 24px;
-    align-self: stretch;
-    color: rgba(0, 0, 0, 0.60);
-font-family: Roboto;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-align: center;
+    margin-top: 16px;
+    
+
+color: #555;
+
+font-size: 12px;
+
 }
 .footer-logo {
     display: flex;
     flex-direction: row;
-
+     align-items: center;
 
 }
 .crik-logo {
      height:45px;
 }
 .logo-criktext {
-     font-size: 32px;
-    font-weight: 600;
-    font-family: "Roboto Condensed", sans-serif;
 
 
-    color: #022775;
+
+font-size: 22.373px;
+font-style: normal;
+font-weight: 600;
+
 }
 .footer-items {
     display: flex;
@@ -146,40 +151,22 @@ text-align: center;
     gap:18px;
 
 }
-.footer-last-text {
-    color: rgba(85, 85, 85, 0.80);
-font-family: "Roboto Condensed";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
+
 .footer-last-texts {
-    color: #000;
-font-family: "Roboto Condensed";
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+   color: #060B13;
 }
 .copyright {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 72px;
+    margin-top: 40px;
 }
-.copyright-text {
-    color: #777;
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
+
+
 .terms-cond {
  display: flex;
  flex-direction: row;
- gap:50px;
+ gap:48px;
 }
 
 

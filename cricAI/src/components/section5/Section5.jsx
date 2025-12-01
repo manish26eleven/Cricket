@@ -45,18 +45,18 @@ const Section5 = () => {
                    <span className='footer-last-text'>Blog</span>
                 </div>
                  <div className='footer-items'>
-                <span className='footer-last-texts'>Page</span>
-                <span className='footer-last-text'>Product</span>
-                 <span className='footer-last-text'>About</span>
-                  <span className='footer-last-text'>Pricing</span>
-                   <span className='footer-last-text'>Blog</span>
+                <span className='footer-last-texts'>Rescourse</span>
+                <span className='footer-last-text'>Integration</span>
+                 <span className='footer-last-text'>Integration Detail</span>
+                  <span className='footer-last-text'>Sign Up</span>
+                   <span className='footer-last-text'>404</span>
                 </div>
                  <div className='footer-items'>
-                <span className='footer-last-texts'>Page</span>
-                <span className='footer-last-text'>Product</span>
-                 <span className='footer-last-text'>About</span>
-                  <span className='footer-last-text'>Pricing</span>
-                   <span className='footer-last-text'>Blog</span>
+                <span className='footer-last-texts'>Contact</span>
+                <span className='footer-last-text'>Instagram</span>
+                 <span className='footer-last-text'>Dribbble</span>
+                  <span className='footer-last-text'>Behance</span>
+                   <span className='footer-last-text'>Twitter</span>
                 </div>
               </div>
           </div>
