@@ -22,19 +22,31 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import playstore from '../src/assets/playstore.svg';
 import Home from "./pages/home/Home";
+import Ground from "./pages/ground/Ground";
+import Match from "./pages/match/Match";
+import Demo from "./pages/demo/Demo";
+import Tournament from "./pages/tournament/Tournament";
+import Thanksyou from "./pages/thanks/Thanksyou";
 const App = () => {
   const isMobile = window.innerWidth < 768 ? true : false;
   console.log(isMobile);
   return (
   <>
+  
+
    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/about" element={<About />} /> */}
-        {/* <Route path="/contact" element={<Contact />} /> */}
+        <Route path="/ground" element={<Ground />} />
+        <Route path="/match" element={<Match />} />
+         <Route path="/tournament" element={<Tournament />} />
+        <Route path="/demo" element={<Demo />} />
+        <Route path="/thanks" element={<Thanksyou />} />
       </Routes>
     </BrowserRouter>
+     
   </>
+ 
 
    
   );

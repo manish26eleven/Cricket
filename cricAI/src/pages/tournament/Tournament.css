@@ -1,0 +1,27 @@
+.ground-buttons {
+    margin-top: 140px;
+    margin-bottom: 194px;
+    width: 143px;
+height: 52px;
+border-radius: 100px;
+background: #4868CA;
+color: #FFF;
+text-align: center;
+font-family: "Roboto Condensed";
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 100% */
+}
+@media (max-width : 768px) {
+    .ground-buttons {
+    margin-top: 45px;
+    margin-bottom: 19px;
+    width: 143px;
+height: 44px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+}

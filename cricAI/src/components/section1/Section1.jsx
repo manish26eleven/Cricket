@@ -3,42 +3,48 @@ import './Section1.css';
 import section1video from  '../../assets/section1video.mp4';
 import tick from  '../../assets/tick.svg';
 import arrow from  '../../assets/arrow.svg';
-const  Section1 = ({image}) => {
+import { useNavigate, useNavigation } from 'react-router-dom';
+const  Section1 = ({image , obj, type , navigation}) => {
+     const navigate = useNavigate();
     return (
+      
         <>
       <div className='container'>
   <div className='left-content'>
     <div className='content'>
     <span className='title'>
-      Bring Smart DRS to Your Ground in Minutes.
+     {obj?.title}
     </span>
-    <span className='description'>Crik.ai gives local cricket grounds access to professional-grade review technology with a simple, portable setup</span>
+    <span className='description'>{obj?.desc}</span>
     <div className='item-list'>
         <div className='list'>
              <div className='tick-div'>
                <img src={tick}/>
              </div>
-             <span className='card-text'>Quick, portable setup for any ground</span>
+             <span className='card-text'>{obj?.points[0]}</span>
 
         </div>
          <div className='list'>
              <div className='tick-div'>
                <img src={tick}/>
              </div>
-             <span className='card-text'>AI-powered LBW & impact analysis</span>
+             <span className='card-text'>{obj?.points[1]}</span>
 
         </div>
          <div className='list'>
              <div className='tick-div'>
                <img src={tick}/>
              </div>
-             <span className='card-text'>Clear, fast decisions for umpires</span>
+             <span className='card-text'>{obj?.points[2]}</span>
 
         </div>
 
     </div>
-    <button className='card-button'>
-    <span className='button-text'>DRS for Ground</span>
+     <button className={type == 1 ?'card-button' : 'card-button2'}
+      onClick={() =>
+                navigate(type == 1 ? '/ground' : '/tournament')
+              }>
+    <span className='button-text'>{obj?.buttonname}</span>
     <div className='arrow-div'>
    <img
    src={arrow} className='arrow-section1'/>

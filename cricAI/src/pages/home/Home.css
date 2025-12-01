@@ -514,6 +514,68 @@ border-radius: 73px;
 background: #FFF;
 margin-top: 24px;
 }
+.mobile-foot-image {
+   margin: 0px 24px 0px 24px;
+  
+  width: auto;
+  height: 576px;
+
+  background-image: url('../../assets/mobile/mobileumpire.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;   /* allows content on top */
+  border-radius: 20px; 
+   /* if you want rounded corners */
+}
+.footer-content-mobile {
+position: absolute;
+  display: flex;
+  flex-direction: column;
+  width:auto;
+  top: 40px;     /* adjust as needed */
+  left: 22px;
+  right:22px;
+  color: white;
+  
+  align-items: center;
+  justify-content: center;
+  /* font-size: 32px; */
+  /* font-weight: 600; */
+
+}
+.footer-title-mobile {
+  
+
+color: #FFF;
+text-align: center;
+font-family: "Roboto Condensed";
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 38.4px */
+letter-spacing: -0.64px;
+}
+.footer-desc-mobile {
+ color: #FFF;
+text-align: center;
+
+/* Body/Extra Large/Regular */
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 28.8px */
+letter-spacing: -0.216px;
+margin-top: 16px;
+}
+.playstore-image-mobile {
+  width: 181.8px;
+height: 61px;
+margin-top: 16px;
+display: flex;
+}
 @media (max-width: 768px) {
  .main-title {
     font-size: 32px;

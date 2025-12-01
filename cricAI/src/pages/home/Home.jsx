@@ -18,13 +18,29 @@ import Section5 from "../../components/section5/Section5";
 import Testinomial from '../../components/testinomial/Testinomial'
 import phoneImage from '../../assets/phoneImage.png';
 import playstore from '../../assets/playstore.svg';
+import { useNavigate } from 'react-router-dom';
 const Home = () =>{
     const isMobile = window.innerWidth < 768 ? true : false;
+    const navigation = useNavigate();
+    const section1obj = {
+      title : 'Bring Smart DRS to Your Ground in Minutes.',
+      desc : 'Crik.ai gives local cricket grounds access to professional-grade review technology with a simple, portable setup',
+      points : ['Quick, portable setup for any ground' ,'AI-powered LBW & impact analysis' ,'Clear, fast decisions for umpires'],
+      buttonname: 'Get DRS for Ground'
+
+    };
+    const section3obj = {
+      title : 'Give Your Entire Tournament Professional-Level DRS.',
+      desc : 'Manage multiple matches with a centralized DRS dashboard, AI-based decision support, and consistent review standards for every game in the tournament.',
+      points : ['Central panel for organizers' ,'Consistent, tournament-wide decisions' ,'AI review clips for archives & highlights'],
+      buttonname: 'Get DRS for Tournament'
+
+    };
     return(
        <>
  <div className="glow-wrapper">
-       <div className="glow glow-left" onClick={() => console.log("Left glow clicked")}></div>
-<div className="glow glow-right" onClick={() => console.log("Right glow clicked")}></div>
+       <div className="glow glow-left" ></div>
+<div className="glow glow-right" ></div>
 
         <Header />
       
@@ -150,11 +166,18 @@ className="hero-img-phone"/> </>:
 <Section1
 
 image= {section1video}
+obj = {section1obj}
+navigation={navigation}
+type='1'
 />
 </div>
 {/* <Section2/> */}
 <MainSection2/>
-<Section1 image={sectionvideo3}/>
+<div style={isMobile ? {marginTop :'32px'} : {}}>
+<Section1 image={sectionvideo3}
+obj={section3obj}
+type='3'/> 
+</div>
 <div className="section">
    <span className="section-title">
     Features
@@ -185,7 +208,7 @@ What Players and Umpires Say About Crik.ai </span>
 
 </div>
 <Testinomial/>
-   {!isMobile && <div className="foot-image">
+   {!isMobile ? <div className="foot-image">
   <div className="footer-content">
     <span className="footer-title">
       “Give Every Ground the Power of Professional DRS.”
@@ -194,6 +217,16 @@ What Players and Umpires Say About Crik.ai </span>
       Take the first step toward a  new experience of DRS System
     </span>
     <img src={playstore} className="playstore-image"/>
+  </div>
+  </div> : <div className='mobile-foot-image'>
+      <div className="footer-content-mobile">
+    <span className="footer-title-mobile">
+      “Give Every Ground the Power of Professional DRS.”
+    </span>
+    <span className="footer-desc-mobile">
+      Take the first step toward a  new experience of DRS System
+    </span>
+    <img src={playstore} className="playstore-image-mobile"/>
   </div>
   </div>}
   <Section5/>

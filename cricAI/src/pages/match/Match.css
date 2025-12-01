@@ -1,0 +1,213 @@
+.ground-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ground-title {
+    margin-top: 88px;
+    align-self: stretch;
+    color: #060B13;
+text-align: center;
+font-family: "Roboto Condensed";
+font-size: 62px;
+font-style: normal;
+font-weight: 400;
+line-height: 68px; /* 109.677% */
+}
+.ground-desc {
+    margin-top: 24px;
+    color: #555;
+text-align: center;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 180%; /* 32.4px */
+}
+.ground-match {
+   color: #060B13;
+   margin-top: 64px;
+text-align: center;
+font-family: "Roboto Condensed";
+font-size: 48px;
+font-style: normal;
+font-weight: 500;
+line-height: 56px; /* 116.667% */
+}
+.ground-form {
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+    width: 872px;
+height: 420px;
+margin-top: 32px;
+
+}
+.ground-row {
+    display: flex;
+    flex-direction: row;
+    gap:80px;
+}
+.ground-row-title {
+    color: #000;
+font-family: "Roboto Condensed";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px; /* 112.5% */
+}
+.ground-row-input {
+    width: 396px;
+height: 61px;
+border-radius: 8px;
+border: 1px solid #EAE8E8;
+background: #FFF;
+font-size: 14px;
+color: #060B13;
+font-family: Roboto;
+font-weight: 500;
+padding-left: 24px;
+  box-sizing: border-box;
+  appearance: none;
+}
+.ground-select-input {
+    width: 396px;
+height: 61px;
+border-radius: 8px;
+border: 1px solid #EAE8E8;
+background: #FFF;
+font-size: 14px;
+color: #060B13;
+font-family: Roboto;
+font-weight: 500;
+/* padding-left: 26px; */
+padding-right: 24px;
+padding-left: 24px;
+  box-sizing: border-box;
+  appearance: none;
+   background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23999' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 24px center;
+  background-size: 12px;
+  
+}
+.calendar {
+     background-image: url('../../assets/forms/calender.svg');
+  background-repeat: no-repeat;
+  background-position: right 24px center;
+  background-size: 12px;
+  /* display: none; */
+  -webkit-appearance: none;
+    
+}
+.input-div {
+display: flex;
+flex-direction: column;
+gap:8px;
+
+}
+.ground-button {
+    margin-top: 40px;
+    margin-bottom: 194px;
+    width: 143px;
+height: 52px;
+border-radius: 100px;
+background: #4868CA;
+color: #FFF;
+text-align: center;
+font-family: "Roboto Condensed";
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 100% */
+}
+.ground-row-input::placeholder {
+  color: #A19E9E;
+  /* padding-left: 24px; */
+/* text-align: center; */
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 171.429% */
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  display: none;
+  -webkit-appearance: none;
+}
+
+@media (max-width : 768px) {
+    .ground-title {
+    margin-top: 64px;
+
+font-size: 32px;
+
+line-height: 40px; /* 109.677% */
+}
+.ground-desc {
+    margin-top: 14px;
+   
+font-size: 14px;
+
+line-height: 150%; /* 32.4px */
+}
+.ground-match {
+   
+   margin-top: 24px;
+
+font-size: 28px;
+
+
+line-height: 32px; /* 116.667% */
+
+
+}
+.ground-form {
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    width: auto;
+height: auto;
+margin-top: 16px;
+
+}
+.ground-row {
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+.ground-row-input {
+    width: 90vw;
+height: 56px;
+
+}
+.ground-select-input {
+    width: 90vw;
+height: 56px;
+
+  
+}
+.ground-button {
+    margin-top: 40px;
+    margin-bottom: 19px;
+    width: 143px;
+    display: flex;
+height: 44px;
+border-radius: 100px;
+background: #4868CA;
+color: #FFF;
+text-align: center;
+justify-content: center;
+align-items: center;
+font-family: "Roboto Condensed";
+text-align: center;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 100% */
+}
+
+}

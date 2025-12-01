@@ -2,8 +2,11 @@ import './MainSection2.css';
 import section2video from '../../assets/section2video.mp4';
 import tick from  '../../assets/tick.svg';
 import arrow from  '../../assets/arrow.svg';
+import { useNavigate } from 'react-router-dom';
 const MainSection2 = () => {
+   const navigate = useNavigate();
     return (
+      
         <>
           <div className='containers'>
               <div className='main-container'>
@@ -52,7 +55,7 @@ const MainSection2 = () => {
                   </div>
           
               </div>
-              <button className='card-button'>
+              <button className='card-button' onClick={() => navigate('/match')}>
               <span className='button-text'>Get DRS for Match</span>
               <div className='arrow-div'>
              <img

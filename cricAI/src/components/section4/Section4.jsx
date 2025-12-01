@@ -3,8 +3,10 @@ import Vector from '../../assets/Vector.svg';
 import arrow from '../../assets/arrow.svg';
 import cardContainer from '../../assets/cardContainer.png';
 import mobileContainer from '../../assets/mobile/mobileContainer.png';
+import { useNavigate } from 'react-router-dom';
 const Section4 = () => {
   const isMobile = window.innerWidth < 768 ? true : false;
+  const navigate = useNavigate();
     return(
         <>
         <div className='section4-container'>
@@ -16,7 +18,7 @@ const Section4 = () => {
   <div className="card">
     <span className='cards-texts'>How it works</span>
     <span className='cards-desc'>When an umpire initiates a review, our system instantly captures and analyzes the match clip using advanced computer vision.<br/> Within seconds, the analyzed video appears on the umpire’s screen — enabling faster, fairer, and smarter decisions.</span>
-  <button className='cards-button'>
+  <button className='cards-button' onClick={() => navigate('/demo')}>
 
     <span>Book Demo</span>
      <div className="circles">
