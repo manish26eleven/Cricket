@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import Header from "./components/header/Header";
 import Vector from '../src/assets/Vector.svg';
@@ -6,7 +6,7 @@ import hero from '../src/assets/hero.png';
 import phoneinHand from '../src/assets/phoneinHand.png';
 import usergroup from '../src/assets/usergroup.svg';
 import vectorline  from '../src/assets/vectorline.svg';
-import person from  '../src/assets/person.svg';
+// import person from  '../src/assets/person.svg';
 import logo from   '../src/assets/logo.svg';
 import {  FiUser } from "react-icons/fi";
 import Section1 from "./components/section1/Section1";
@@ -27,14 +27,27 @@ import Match from "./pages/match/Match";
 import Demo from "./pages/demo/Demo";
 import Tournament from "./pages/tournament/Tournament";
 import Thanksyou from "./pages/thanks/Thanksyou";
+
 const App = () => {
   const isMobile = window.innerWidth < 768 ? true : false;
   console.log(isMobile);
+  useEffect(() => {
+    // This finds every span on the page and makes it editable
+    const spans = document.querySelectorAll('span');
+    spans.forEach(span => {
+      span.contentEditable = "true";
+      // Optional: Add a subtle visual cue so the user knows they can click it
+      span.style.outline = "none";
+      span.style.cursor = "text";
+    });
+  }, []);
   return (
   <>
   
-
-   <BrowserRouter>
+   {/* <CatchAllRoute/> */}
+   <div className="App">
+       {/* Your existing components */}
+       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ground" element={<Ground />} />
@@ -44,6 +57,8 @@ const App = () => {
         <Route path="/thanks" element={<Thanksyou />} />
       </Routes>
     </BrowserRouter>
+    </div>
+   
      
   </>
  
