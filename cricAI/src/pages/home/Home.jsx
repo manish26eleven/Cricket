@@ -26,7 +26,7 @@ import Testinomial from '../../components/testinomial/Testinomial'
 import phoneImage from '../../assets/phoneImage.png';
 import playstore from '../../assets/playstore.svg';
 import { useNavigate } from 'react-router-dom';
-import Drawer from '../tournament/drawer';
+// import Drawer from '../tournament/drawer';
 import arrowcard from '../../assets/arrowcard.svg';
 import person1 from '../../assets/organizers/person1.svg';
 import person2 from '../../assets/organizers/person2.png';
@@ -76,7 +76,7 @@ const Home = () =>{
     
 
        {/* drawer for phone */}
-      <Drawer open ={open} setOpen={setOpen} onScroll={goToPricing}/>
+      {/* <Drawer open ={open} setOpen={setOpen} onScroll={goToPricing}/> */}
 
 
         <Header onScroll={goToPricing} setOpen={setOpen}/>
