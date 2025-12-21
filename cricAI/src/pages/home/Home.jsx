@@ -90,7 +90,7 @@ const Home = () =>{
           </span>
            <div class="crik-wrapper">
               <button className="crik-button"> 
-              <span className="button-title" contentEditable="true">Get Crik.ai Access</span>
+              <span className="button-title" contentEditable="true">Get Crik.ai DRS</span>
               <div className="circle">
                <img src={Vector} alt="logo" className="circle__img" />
                 </div>
@@ -130,9 +130,9 @@ className="hero-img-phone"/> </>:
              
               <span className="card2-texts">   <img src={arrowcard}/>9/10 </span>
             
-            <span className="card2-texts"><img src={arrowcard}/>143 </span>
+            <span className="card2-texts"><img src={arrowcard}/>10K+</span>
             <span className="card2-texts">&nbsp;&nbsp;&nbsp;&nbsp;1.9 min</span>
-            <span className="card2-texts"> <img src={arrowcard}/> %92</span>
+            <span className="card2-texts"> <img src={arrowcard}/> 92%</span>
           </div>
            
          </div>

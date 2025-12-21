@@ -6,7 +6,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-  gap: 5px;
+  gap: 16px;
   
 }
 
@@ -73,7 +73,7 @@ line-height: 180%; /* 25.2px */
 }
 .cards-button {
     align-self: normal;
-    margin-top: 35px;
+    margin-top: 20px;
     border-radius: 999px;
 border: 0.8px solid #E5EBF1;
 background: #F7F8FA;
